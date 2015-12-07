@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+    <script src="javascript/itemHandler.js"></script>
+    <script src="javascript/sentenceExaminer.js"></script>
+    <script src="javascript/pageFunctions.js"></script>
+</head>
+<body>
+    <h1>Word Exercise</h1>
+    <div style="main">
+        <textarea rows="4" id="sentence" placeholder="Enter your sentence here and press parse."></textarea>
+        <p id="alteredSentence">And the answer will show up here.</p>
+        <button onclick="parseSentence();">Parse</button>
+    </div>
+    <div>
+        <h1>Parse History</h1>
+        <table>
+            <thead>
+                <th>Original</th>
+                <th>Parsed</th>
+            </thead>
+            <tbody id="history">
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
